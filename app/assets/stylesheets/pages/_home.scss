@@ -1,1 +1,65 @@
+#scrollbutton{
+  border: solid;
+  border-radius: 50%;
+  padding: 8px;
+  border-color: #DBA39A;
+  color: #DBA39A;
+}
+
+#about{
+  background-color: #DBA39A;
+}
+
+
 // Specific CSS for your home-page
+
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento");
+.about-tools ul li, .contact-social-icons ul a li {
+  text-align: center; }
+
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto; }
+
+h1, h2, h3, h4, h5, p {
+  font-family: "Comfortaa", Helvetica, Arial, sans-serif;
+}
+
+
+
+.cover {
+  padding: 10% 0 10% 0; }
+  .cover.top {
+    padding: 15% 0 10% 0;
+    height: 100vh;
+    display: flex;
+    background-color: #FAF8F1; }
+  .cover.bottom {
+    padding: 10% 0 10% 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+#portfolio {
+  background-color: #FAF8F1; }
+
+
+    img {
+      width: 100%; }
+
+
+
+
+.back-to-top {
+  display: none; }
+  .back-to-top.visible {
+    display: block; }

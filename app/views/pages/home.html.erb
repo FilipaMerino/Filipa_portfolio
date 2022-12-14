@@ -1,2 +1,74 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="container-fluid">
+
+<div class="row cover top">
+  <div class="col-xs-12">
+    <div class="row">
+      <div class="col-xs-12 headline">
+        <h1 class="text-center">Hi, I'm Filipa</h1>
+        <p class="lead text-center">A Junior Web Developer.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 center-block text-center">
+        <a href="#about"><i class="fa-solid fa-arrow-down" id="scrollbutton"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%# ABOUT ME SESSION %>
+
+<div id="about"class="row justify-content-center d-flex ps-5 py-4">
+  <div class="col-12 d-flex">
+    <%= image_tag "aboutme.JPG", style: "width:25%; border-radius:5%" %>
+      <div class="col-8 ps-5" style="display: flex; flex-direction: column; justify-content: center;">
+        <h2 style="color: #faf8f1; margin-bottom: 50px">ABOUT ME</h2>
+        <p style="color: #faf8f1">After a couple of years as a neuropsychologist, I decided I needed a change in my career. After starting to learn code in my spare time, I enrolled in an intensive Full Stack Coding Bootcamp at Le Wagon Lisbon.</p>
+        <p style="color: #faf8f1">As a curious and motivated person, with a good eye for detail and great communication skills, I’m determined to bring my new skills to life as a Web Developer and continue to improve my technical skills.</p>
+      </div>
+  </div>
+</div>
+
+<%# -------- portfolio ----------- %>
+<div class="container">
+  <div class="row justify-content-center mt-5">
+    <div>
+    <h1 style="display: flex; justify-content: center;">Porfolio</h1>
+  </div>
+  <div class="row my-5">
+    <div class="col-lg-4 d-flex">
+      <%= image_tag "extended_away1.png" %>
+    </div>
+    <div class="col-lg-7" style="justify-content: center; display: flex; flex-direction: column;" style="margin-left:65px!important">
+      <h4 class="portfolio-projects--title mb-4">Extended Away</h4>
+      <p class="portfolio-projects--desc">A web app designed for people who are going to travel and need someone to take care of their homes. Our mission is to provide a simple, intuitive way for Homeowners and Caretakers to interact and get things done, faster. </p>
+      <p class="portfolio-projects--desc"><strong>Uses:</strong> RoR, Javascript, Bootstrap, CSS, HTML</p>
+      <a class="btn btn-primary" style="background-color: #dba39a; width: 18%; border-radius: 10px; border:none" href="http://www.extendedaway.me/" role="button">View Project</a>
+    </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-end">
+    <div class="col-lg-4" style="display: flex; flex-direction: column; justify-content: center;">
+      <h4 class="portfolio-projects--title">Admin Virtuosa</h4>
+      <p class="portfolio-projects--desc">A website I built from scratch for a virtual assistant, before I enter the bootcamp. </p>
+      <p class="portfolio-projects--desc"><strong>Uses:</strong> Bootstrap, CSS, HTML, Javascript </p>
+      <a class="btn btn-primary" style="background-color: #dba39a; width: 35%; border-radius: 10px; border:none" href="https://www.adminvirtuosa.com/" role="button">View Project</a>
+    </div>
+    <div class="col-lg-4 d-flex">
+      <%= image_tag "adminvirtuosa.png" %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-4 d-flex">
+      <%= image_tag "extended_away1.png" %>
+    </div>
+    <div class="col-lg-7" style="justify-content: center; display: flex; flex-direction: column;" style="margin-left:65px!important">
+      <h4 class="portfolio-projects--title mb-4">GoatScape</h4>
+      <p class="portfolio-projects--desc">A Web Marketplace application on Rails 7 that replicates Airbnb functionality to create new bookings, filter, and search for listings. </p>
+      <p class="portfolio-projects--desc"><strong>Uses:</strong> RoR, Javascript, Bootstrap, CSS, HTML</p>
+      <a class="btn btn-primary" style="background-color: #dba39a; width: 18%; border-radius: 10px; border:none" href="http://www.extendedaway.me/" role="button">View Project</a>
+    </div>
+  </div>
+</div>
