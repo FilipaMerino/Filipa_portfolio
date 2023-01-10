@@ -1,16 +1,15 @@
 <div class="container-fluid">
-
-<div class="row cover top">
-  <div class="col-xs-12">
-    <div class="row">
-      <div class="col-xs-12 headline">
-        <h1 class="text-center">Hi, I'm Filipa</h1>
-        <p class="lead text-center">A Junior Web Developer.</p>
+  <div class="row cover top">
+    <div class="col-xs-12">
+      <div class="row">
+        <div class="col-xs-12 headline">
+          <h1 class="text-center">Hi, I'm Filipa</h1>
+          <p class="lead text-center">A Junior Web Developer.</p>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 center-block text-center">
-        <a href="#about"><i class="fa-solid fa-arrow-down" id="scrollbutton"></i></a>
+      <div class="row">
+        <div class="col-xs-12 center-block text-center my-3">
+          <a href="#about"><i class="fa-solid fa-arrow-down" id="scrollbutton"></i></a>
       </div>
     </div>
   </div>
@@ -22,18 +21,63 @@
   <div class="col-12 d-flex">
     <%= image_tag "aboutme.JPG", style: "width:25%; border-radius:5%" %>
       <div class="col-8 ps-5" style="display: flex; flex-direction: column; justify-content: center;">
-        <h2 style="color: #faf8f1; margin-bottom: 50px">ABOUT ME</h2>
-        <p style="color: #faf8f1">After a couple of years as a neuropsychologist, I decided I needed a change in my career. After starting to learn code in my spare time, I enrolled in an intensive Full Stack Coding Bootcamp at Le Wagon Lisbon.</p>
-        <p style="color: #faf8f1">As a curious and motivated person, with a good eye for detail and great communication skills, I’m determined to bring my new skills to life as a Web Developer and continue to improve my technical skills.</p>
+        <h2 style="color: #faf8f1; margin-bottom: 20px">ABOUT ME</h2>
+        <p style="color: #faf8f1">Hi there, I'm Filipa!</p>
+        <p style="color: #faf8f1"> As a junior web developer, I bring a range of skills and abilities to the table that can benefit you and your company.</p>
+        <p style="color: #faf8f1">By choosing to work with me, you can expect high-quality and visually appealing websites that meet the needs of your clients, as well as the ability to work in a team environment and contribute to the success of your projects.</p>
+        <p style="color: #faf8f1">Thank you for taking the time to visit my online portfolio. I hope you enjoy my work and please don't hesitate to reach out if you have any questions or if you would like to collaborate on a project.</p>
       </div>
   </div>
 </div>
 
+
+<%# -------- SKILLS ----------- %>
+<div class="my-5">
+  <h1 class="d-flex justify-content-center">What I can help you with</h1>
+  <p class="d-flex justify-content-center">I am always open to discussing custom solutions for your specific needs. If there's something you don't see listed, please don't hesitate to reach out to me.</p>
+</div>
+<div id="skills" class="container d-flex my-5 justify-content-center mb-5">
+  <div class="row justify-content-around">
+    <div class="card text-center p-5 card-skills col-lg-3 col-md-12 my-3">
+      <div>
+        <%= image_tag "frontend.svg", class:"skills-image" %>
+      </div>
+      <h5 class="card-title"><strong>Front-end</strong></h5>
+      <p class="card-text">From design to code, I create responsive and visually appealing websites. </p>
+      <p class="programingLanguages"><strong>Bootstrap | CSS | SCSS | Javascript | HTML</strong></p>
+    </div>
+
+  <div class="card text-center p-5 card-skills col-lg-3 col-md-12 my-3" >
+    <div>
+      <%= image_tag "backend.svg", class:"skills-image" %>
+    </div>
+    <h5 class="card-title"><strong>Back-end</strong></h5>
+    <p class="card-text"> I'll help you build and mantain websites and web applications with powerful and reliable functionality.</p>
+    <p class="programingLanguages"><strong>Ruby | Ruby on Rails | SQL-Postgresql </strong></p>
+
+    <%# <button type="button" class="btn btn-link">Learn More</button>
+    <p id="programingLanguages" class="d-none"><strong>Ruby | Ruby on Rails | GIT</strong></p> %>
+  </div>
+
+   <div class="card text-center p-5 card-skills col-lg-3 col-md-12 my-3">
+    <div>
+      <%= image_tag "figma.svg", class:"skills-image" %>
+    </div>
+    <h5 class="card-title"><strong>Web Design</strong></h5>
+    <p class="card-text">I'll design a website that meets your needs and goals and is easy to use for your visitors.</p>
+    <p class="programingLanguages"><strong>Figma</strong></p>
+
+  </div>
+</div>
+
+</div>
+
+
 <%# -------- portfolio ----------- %>
-<div class="container">
+<div class="container my-5">
   <div class="row justify-content-center mt-5">
     <div>
-    <h1 style="display: flex; justify-content: center;">Porfolio</h1>
+    <h1 id="portfolioexamples" class="d-flex justify-content-center mt-5">Portfolio</h1>
   </div>
   <div class="row my-5">
     <div class="col-lg-4 d-flex">
@@ -71,4 +115,33 @@
       <a class="btn btn-primary" style="background-color: #dba39a; width: 18%; border-radius: 10px; border:none" href="https://agoatscape.herokuapp.com/" role="button">View Project</a>
     </div>
   </div>
+</div>
+
+<%# -------- CONTACT ME ----------- %>
+  <div class="contact-us">
+  <div class="title">
+    <h1>Contact us</h1>
+  </div>
+  <div class="form">
+    <div class="form-items">
+      <input type="text" class="input" placeholder="Username">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="form-items">
+      <input type="text" class="input" placeholder="Email">
+      <i class="fas fa-envelope"></i>
+    </div>
+    <div class="form-items">
+      <textarea class="input message" cols="30" rows="10" placeholder="Message....."></textarea>
+    </div>
+  </div>
+
+  <div class="btn">
+    Submit
+    <i class="fas fa-arrow-right"></i>
+  </div>
+
+
+
+
 </div>
